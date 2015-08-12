@@ -3,7 +3,9 @@ description: "Get useful articles for Web Development to expecting different res
 keywords: "html5, jquery, tutorials, image gallery, plugins, web design, tutorial, php, css, css3, javascript, php login system, programming, mysql, web development, resources, buttons, free, downloads, iphone, freebies, news, html, freelance"
 url: "http://yudhasetiawan.com"
 timezone: "Asia/Jakarta"
-google_analytics: "UA-37180411-3"
+google:
+  uid: "37180411"
+  analytics: "UA-37180411-3"
 author:
   name: "Yudha Setiawan"
   url: "http://yudhasetiawan.com"
