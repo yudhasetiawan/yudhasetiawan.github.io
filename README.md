@@ -1,8 +1,9 @@
 # A Personal Site
 
-This is where Yudha Setiawan writes him stuff and messes around every once in a while. See the messes [here](https://github.com/yudhasetiawan/yudhasetiawan.github.com/releases).
+This is where [Yudha Setiawan](https://github.com/yudhasetiawan/) writes him stuff and messes around every once in a while.
+See the messes [here](https://github.com/yudhasetiawan/yudhasetiawan.github.com/releases).
 
-## Complie
+## Compile
 
 ```
 $ bundle install
@@ -23,4 +24,4 @@ All other directories and files are MIT Licensed (where applicable).
 
 ## Find Me
 
-:wave: :love: [@yudhasetiawan17](http://twitter.com/yudhasetiawan17) :love: :wave:
+:wave: :heart: [@yudhasetiawan17](http://twitter.com/yudhasetiawan17) :heart: :wave:
