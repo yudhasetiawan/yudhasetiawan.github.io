@@ -1,0 +1,68 @@
+{% if page.date %}
+	<title>{{ page.title }} - {{ site.title }}</title>
+	<meta name="title" content="{{ page.title }} - {{ site.title }}"/>
+	<meta name="description" content="{{ page.content | strip_html | strip_newlines | truncate: 120 }}"/>
+	
+	<meta property="og:title" content="{{ page.title }} - {{ site.title }}"/>
+	<meta property="og:description" content="{{ page.content | strip_html | strip_newlines | truncate: 120 }}"/>
+	<meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+	<meta property="og:type" content="article" />
+	
+	<meta name="twitter:title" content="{{ page.title | truncate: 120 }}"/>
+	<meta name="twitter:description" content="{{ site.description | truncate: 200 }}"/>
+	<meta name="twitter:domain" content="{{ site.url }}{{ page.url }}"/>
+{% else %}
+	{% if page.title %}
+		<title>{{ page.title }} - {{ site.title }}</title>
+	{% else %}
+		<title>{{ site.title }} - {{ site.description }}</title>
+	{% endif %}
+	
+	<meta name="title" content="{{ site.title }} - {{ site.description }}"/>
+	<meta name="description" content="{{ site.description | truncate: 120 }}"/>
+	
+	<meta property="og:title" content="{{ site.title }} - {{ site.description }}"/>
+	<meta property="og:description" content="{{ site.description | truncate: 120 }}"/>
+	<meta property="og:url" content="{{ site.url }}" />
+	<meta property="og:type" content="blog" />
+	
+	<meta name="twitter:title" content="{{ site.title | truncate: 120 }}"/>
+	<meta name="twitter:description" content="{{ site.description | truncate: 200 }}"/>
+	<meta name="twitter:domain" content="{{ site.url }}"/>
+{% endif %}
+
+<meta http-equiv="Content-Language" content="en-US"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="keywords" content="{{ site.keywords }}"/>
+
+<link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.png"/>
+<link rel="icon" type="image/x-icon" href="/assets/img/favicon.png"/>
+
+<meta name="application-name" content="{{ site.title }}"/>
+<meta name="msapplication-tooltip" content="{{ site.title }} - {{ site.description }}"/>
+<meta name="msapplication-TileColor" content="#000000"/>
+<meta name="msapplication-square70x70logo" content="/assets/img/Logo/70x70.png"/>
+<meta name="msapplication-square150x150logo" content="/assets/img/Logo/150x150.png"/>
+<meta name="msapplication-wide310x150logo" content="/assets/img/Logo/310x150.png"/>
+<meta name="msapplication-square310x310logo" content="/assets/img/Logo/310x310.png"/>
+<meta name="msapplication-TileImage" content="/assets/img/Logo/310x310.png"/>
+
+<link rel="apple-touch-icon" href="/assets/img/Logo/apple-touch-icon.png"/>
+<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/Logo/apple-touch-icon-72x72.png"/>
+<link rel="apple-touch-icon" sizes="114x114" href="/assets/img/Logo/apple-touch-icon-114x114.png"/>
+<link rel="apple-touch-icon" sizes="144x144" href="/assets/img/Logo/apple-touch-icon-144x144.png"/>
+
+<meta property="og:site_name" content="{{ site.title }}"/>
+<meta property="og:image" content="/assets/img/Logo/standar.png"/>
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="@yudhasetiawan17"/> <!-- Twitter user ID of website -->
+<meta name="twitter:creator" content="@yudhasetiawan17"/>
+<meta name="twitter:image:src" content="/assets/img/Logo/standar.png"/>
+
+<link id="responsive-style" href="/assets/css/reset.css" rel="stylesheet">
+<link id="responsive-style" href="/assets/css/font.css" rel="stylesheet">
+<link id="responsive-style" href="/assets/css/core.css" rel="stylesheet">
+<link id="responsive-style" href="/assets/css/upcoming.css" rel="stylesheet">

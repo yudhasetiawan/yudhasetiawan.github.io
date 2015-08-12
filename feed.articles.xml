@@ -1,0 +1,39 @@
+---
+permalink: /feed.articles.xml
+---
+
+<?xml version="1.0" encoding="utf-8"?>
+{% capture srcbase %}src="{{site.url}}/{% endcapture %}
+<rss version="2.0"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+  xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+  >
+	<channel>
+		<title xml:lang="en">{{ site.title | xml_escape }} - Articles</title>
+		<atom:link href="{{ site.url }}/feed.articles.xml" rel="self" type="application/rss+xml" />
+		<link>{{ site.url }}</link>
+		<description>{{ site.description | xml_escape }}</description>
+		<keywords>{{ site.keywords | xml_escape }}</keywords>
+		<pubDate>{{ site.time | "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+		<lastBuildDate>{{ site.time | "%a, %d %b %Y %H:%M:%S %z" }}</lastBuildDate>
+		<language>en-US</language>
+		{% for post in site.posts %}
+			<item>
+				<title>{{ post.title | xml_escape}}</title>
+				<link>{{ site.url }}{{ post.url }}</link>
+				{% if post.excerpt %}
+					<description>{{ post.excerpt | replace: 'src="/', srcbase | xml_escape }}</description>
+				{% else %}
+					<description>{{ post.content | replace: 'src="/', srcbase | xml_escape }}</description>
+				{% endif %}
+				<pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+				<dc:creator>{{ post.author }}</dc:creator>
+				<guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
+			</item>
+		{% endfor %}
+	</channel>
+</rss>

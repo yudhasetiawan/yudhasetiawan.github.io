@@ -1,0 +1,631 @@
+/*
+ * Core.css is a generic CSS standard that makes that makes class based on
+ * CSS property
+ *
+ * Copyright (C) 2013, Yudha Setiawan.
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ */
+
+/******************************************************************************************************
+ * Cursor
+ * 
+ * @see http://css-tricks.com/almanac/properties/c/cursor/
+ ******************************************************************************************************/
+.cursor.auto {
+	cursor: auto;
+}
+
+.cursor.default {
+	cursor: default;
+}
+
+.cursor.none {
+	cursor: none;
+}
+
+.cursor.context-menu {
+	cursor: context-menu;
+}
+
+.cursor.help {
+	cursor: help;
+}
+
+.cursor.pointer {
+	cursor: pointer;
+}
+
+.cursor.progress {
+	cursor: progress;
+}
+
+.cursor.wait {
+	cursor: wait;
+}
+
+.cursor.cell {
+	cursor: cell;
+}
+
+.cursor.crosshair {
+	cursor: crosshair;
+}
+
+.cursor.text {
+	cursor: text;
+}
+
+.cursor.vertical-text {
+	cursor: vertical-text;
+}
+
+.cursor.alias {
+	cursor: alias;
+}
+
+.cursor.copy {
+	cursor: copy;
+}
+
+.cursor.move {
+	cursor: move;
+}
+
+.cursor.no-drop {
+	cursor: no-drop;
+}
+
+.cursor.not-allowed {
+	cursor: not-allowed;
+}
+
+.cursor.all-scroll {
+	cursor: all-scroll;
+}
+
+.cursor.col-resize {
+	cursor: col-resize;
+}
+
+.cursor.row-resize {
+	cursor: row-resize;
+}
+
+.cursor.n-resize {
+	cursor: n-resize;
+}
+
+.cursor.e-resize {
+	cursor: e-resize;
+}
+
+.cursor.s-resize {
+	cursor: s-resize;
+}
+
+.cursor.w-resize {
+	cursor: w-resize;
+}
+
+.cursor.ns-resize {
+	cursor: ns-resize;
+}
+
+.cursor.ew-resize {
+	cursor: ew-resize;
+}
+
+.cursor.ne-resize {
+	cursor: ne-resize;
+}
+
+.cursor.nw-resize {
+	cursor: nw-resize;
+}
+
+.cursor.se-resize {
+	cursor: se-resize;
+}
+
+.cursor.sw-resize {
+	cursor: sw-resize;
+}
+
+.cursor.nesw-resize {
+	cursor: nesw-resize;
+}
+
+.cursor.nwse-resize {
+	cursor: nwse-resize;
+}
+/******************************************************************************************************
+ * END Cursor
+ ******************************************************************************************************/
+
+/******************************************************************************************************
+ * Custom Font
+ ******************************************************************************************************/
+.font:before {
+	text-decoration: inherit;
+	display: inline-block;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+}
+
+.font {
+	display: inline-block;
+}
+/******************************************************************************************************
+ * END Custom Font
+ ******************************************************************************************************/
+
+::-webkit-scrollbar {
+	width: .5em;
+	height: .35em;
+}
+
+::-webkit-scrollbar-track {
+	background: #3b3b3b;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #00E0FF;
+	border-radius: 100px;
+}
+
+/******************************************************************************************************
+ * Clearfix
+ ******************************************************************************************************/
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+	*zoom: 1;
+}
+
+.clearfix {
+	*zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+	display: table;
+	line-height: 0;
+	content: "";
+}
+
+.clearfix:after {
+	clear: both;
+}
+/******************************************************************************************************
+ * END Clearfix
+ ******************************************************************************************************/
+
+/******************************************************************************************************
+ * Text
+ ******************************************************************************************************/
+.text-left {
+	text-align: left !important;
+}
+
+.text-right {
+	text-align: right !important;
+}
+
+.text-center {
+	text-align: center !important;
+}
+
+.text-justify {
+	text-align: justify !important;
+}
+
+.text-bold {
+	font-weight: bold;
+}
+
+.text-uppercase {
+	text-transform: uppercase;
+}
+
+.text-lowercase {
+	text-transform: lowercase;
+}
+
+.text-capitalize {
+	text-transform: capitalize;
+}
+
+.text-italic {
+	font-style: italic;
+}
+
+.ellipsis {
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.nowrap {
+	white-space: nowrap;
+}
+
+.hide-text {
+	font: 0/0 a;
+	border: 0;
+	/*color: transparent;*/
+	/*background-color: transparent;*/
+	text-indent: 100%;
+	text-shadow: none;
+	white-space: nowrap;
+}
+
+.unselectable {
+	cursor: default;
+	-webkit-user-select: none;
+	 -khtml-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+}
+/******************************************************************************************************
+ * END Text
+ ******************************************************************************************************/
+
+/******************************************************************************************************
+ * Position
+ ******************************************************************************************************/
+.reset {
+	margin: 0;
+	padding: 0;
+}
+
+.center {
+	display: block;
+	margin: 0 auto;
+}
+
+.block {
+	display: block;
+	visibility: visible;
+}
+
+.inherit {
+	display: inherit;
+	visibility: inherit;
+}
+
+.fixed {
+	position: fixed;
+}
+
+.relative {
+	position: relative;
+}
+
+.absolute {
+	position: absolute;
+}
+
+.sticky {
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 0;
+	z-index: 9999;
+}
+
+.top {
+	top: 0;
+}
+
+.right {
+	right: 0;
+}
+
+.bottom {
+	bottom: 0;
+}
+
+.left {
+	left: 0;
+}
+
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
+}
+/******************************************************************************************************
+ * END Position
+ ******************************************************************************************************/
+
+/******************************************************************************************************
+ * Mode
+ ******************************************************************************************************/
+.circle {
+	-webkit-border-radius: 100%;
+	   -moz-border-radius: 100%;
+	        border-radius: 100%;
+}
+
+.round {
+	-webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+	        border-radius: 5px;
+}
+
+.cover {
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+	    -ms-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+}
+
+[hidden],
+.hidden {
+	display: none;
+	visibility: hidden;
+}
+
+[disabled],
+.disabled {
+	cursor: default !important;
+	/*cursor: not-allowed !important;*/
+}
+
+.no-padding {
+	padding: 0;
+}
+
+.no-margin {
+	margin: 0;
+}
+
+.no-indent {
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.no-list-style {
+	list-style: none;
+	list-style-image: none;
+}
+/******************************************************************************************************
+ * END Mode
+ ******************************************************************************************************/
+
+/******************************************************************************************************
+ * Size
+ ******************************************************************************************************/
+.auto-width {
+	width: auto;
+	display: block;
+}
+
+.auto-height {
+	height: auto;
+	display: block;
+}
+
+.full-width {
+	max-width: 100%;
+	width: 100%;
+	display: block;
+	*zoom: 1;
+}
+
+.full-height {
+	height: 100%;
+	display: block;
+}
+/******************************************************************************************************
+ * END Size
+ ******************************************************************************************************/
+
+/******************************************************************************************************
+ * Hyperlink
+ ******************************************************************************************************/
+a,
+a span,
+.animation {
+	-webkit-transition: all 0.5s ease-out;
+	   -moz-transition: all 0.5s ease-out;
+	     -o-transition: all 0.5s ease-out;
+	    -ms-transition: all 0.5s ease-out;
+	        transition: all 0.5s ease-out;
+}
+
+a.external:after {
+	content: url("../img/_blank.png");
+	margin: 0 3px;
+}
+
+a.underline:hover {
+	border-bottom: 1px dotted;
+}
+/******************************************************************************************************
+ * END Hyperlink
+ ******************************************************************************************************/
+
+/******************************************************************************************************
+ * Base Block
+ ******************************************************************************************************/
+.container {
+	margin-right: auto;
+	margin-left: auto;
+	*zoom: 1;
+}
+
+.container:before, .container:after {
+	display: table;
+	line-height: 0;
+	content: "";
+}
+
+.container:after {
+	clear: both;
+}
+/******************************************************************************************************
+ * END Base Block
+ ******************************************************************************************************/
+
+/******************************************************************************************************
+ * Navigation
+ ******************************************************************************************************/
+ul.navigation {
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+ul.navigation li {
+	display: inline-block;
+	position: relative;
+}
+
+ul.navigation li a {
+	display: inline-block;
+	font-size: 14px;
+	line-height: 14px;
+}
+
+ul.navigation li a:link,
+ul.navigation li a:visited {
+	color: #bebebe;
+	text-decoration: none;
+}
+
+ul.navigation li ul {
+	position: absolute;
+	left: 0;
+	padding: 10px 0;
+	display: none;
+	z-index: 9999;
+	border: 1px solid #4D4D4D;
+}
+
+ul.navigation li ul li a {
+	display: block;
+	padding: 10px 15px;
+	font-size: 13px;
+	line-height: 16px;
+	color: #bebebe;
+	/*background: transparent;*/
+}
+
+ul.navigation li a:hover,
+ul.navigation li a.hover,
+ul.navigation li:hover a,
+ul.navigation li.hover a {
+	color: #fffefe;
+	z-index: 10;
+	text-decoration: none;
+}
+
+ul.navigation li a:active {
+	color: #bebebe;
+}
+
+ul.navigation li:hover ul,
+ul.navigation li.hover ul {
+	display: block;
+}
+
+ul.navigation li ul li a:hover,
+ul.navigation li ul li a.hover {
+	color: #fffefe;
+}
+/******************************************************************************************************
+ * END Navigation
+ ******************************************************************************************************/
+
+/******************************************************************************************************
+ * List Menu
+ ******************************************************************************************************/
+ul.square li,
+ul.circle li,
+ul.disc li {
+	margin: 0 0 5px 15px;
+	padding: 0;
+	line-height: 18px;
+}
+
+ul.square, ul.square ul {
+	list-style: square outside;
+}
+
+ul.circle, ul.circle ul {
+	list-style: circle outside;
+}
+
+ul.disc, ul.disc ul {
+	list-style: disc outside;
+}
+/******************************************************************************************************
+ * END List Menu
+ ******************************************************************************************************/
+
+/******************************************************************************************************
+ * Inline Menu
+ ******************************************************************************************************/
+ul.inline > li, ol.inline > li {
+	float: left;
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+}
+/******************************************************************************************************
+ * Inline Menu
+ ******************************************************************************************************/
+
+/******************************************************************************************************
+ * Image
+ ******************************************************************************************************/
+img.width {
+	max-width: 100%;
+	height: auto;
+}
+
+img.height {
+	max-height: 100%;
+	width: auto;
+}
+
+.img-broken img {
+	opacity: 0;
+}
+
+.img-broken {
+	background-color: rgb(215, 215, 215);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-image: url("../img/img-broken.png");
+}
+/******************************************************************************************************
+ * END Image
+ ******************************************************************************************************/

@@ -1,0 +1,40 @@
+title: "Yudha Setiawan"
+description: "Get useful articles for Web Development to expecting different result"
+keywords: "html5, jquery, tutorials, image gallery, plugins, web design, tutorial, php, css, css3, javascript, php login system, programming, mysql, web development, resources, buttons, free, downloads, iphone, freebies, news, html, freelance"
+url: "http://yudhasetiawan.com"
+timezone: "Asia/Jakarta"
+google_analytics: "UA-37180411-3"
+author:
+  name: "Yudha Setiawan"
+  url: "http://yudhasetiawan.com"
+  email: "me@yudhasetiawan.com"
+  address:
+    locality: Yogyakarta
+    country: Indonesia
+  socials:
+    - name: "twitter"
+      title: "Twitter"
+      icon: "circletwitterbird"
+      url: "https://twitter.com/yudhasetiawan17"
+    - name: "facebook"
+      title: "Facebook"
+      icon: "circlefacebook"
+      url: "https://www.facebook.com/yudha.Setiawan17"
+    - name: "pinterest"
+      title: "Pinterest"
+      icon: "circlepinterest"
+      url: "https://www.pinterest.com/yudhasetiawan"
+    - name: "linkedin"
+      title: "Linkedin"
+      icon: "circlelinkedin"
+      url: "http://id.linkedin.com/in/yudhasetiawan"
+emoji:
+  src: "/assets/img/emoji"
+permalink: pretty
+highlighter: pygments
+sass:
+  sass_dir: assets
+  style: :compressed
+gems:
+  - jemoji
+  - jekyll-mentions

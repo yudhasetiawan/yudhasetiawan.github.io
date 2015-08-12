@@ -1,0 +1,24 @@
+yudhasetiawan:
+  name: "Yudha Setiawan"
+  url: "http://yudhasetiawan.com"
+  email: "me@yudhasetiawan.com"
+  address:
+    locality: Yogyakarta
+    country: Indonesia
+  socials:
+    - name: "twitter"
+      title: "Twitter"
+      icon: "circletwitterbird"
+      url: "https://twitter.com/yudhasetiawan17"
+    - name: "facebook"
+      title: "Facebook"
+      icon: "circlefacebook"
+      url: "https://www.facebook.com/yudha.Setiawan17"
+    - name: "pinterest"
+      title: "Pinterest"
+      icon: "circlepinterest"
+      url: "https://www.pinterest.com/yudhasetiawan"
+    - name: "linkedin"
+      title: "Linkedin"
+      icon: "circlelinkedin"
+      url: "http://id.linkedin.com/in/yudhasetiawan"

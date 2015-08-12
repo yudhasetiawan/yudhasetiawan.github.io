@@ -1,0 +1,374 @@
+/*
+ * Reset.css is a generic CSS standard that makes browsers render all HTML elements more consistently.
+ *
+ * Copyright (C) 2013, Yudha Setiawan.
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ */
+
+*, *:after, *:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+* {
+	vertical-align: baseline;
+	text-decoration: none;
+	font-weight: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	border: none;
+	outline: none;
+	padding: 0;
+	margin: 0;
+	background: transparent;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	border: none;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+html {
+	background: #fff;
+	color: #000;
+	font-family: sans-serif;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	font-weight: 400;
+	font-style: normal;
+	line-height: 1.8;
+	position: relative;
+	color: black;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-ms-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+html, body {
+	font-size: 100%;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+
+audio, canvas, video {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+}
+
+audio:not([controls]) {
+	display: none;
+	height: 0;
+}
+
+[hidden], template {
+	display: none
+}
+
+a {
+	cursor: pointer;
+	font-size: 100%;
+	color: inherit;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+a:focus {
+	outline: thin dotted;
+}
+
+a:active, a:hover {
+	outline: none;
+}
+
+a:link, a:visited {
+	text-decoration: none;
+	outline: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}
+
+h1 {
+	font-size: 2em;
+	margin: 0.67em 0;
+}
+
+h2 {
+	font-size: 1.5em;
+	margin: 0.83em 0;
+}
+
+h3 {
+	font-size: 1.17em;
+	margin: 1em 0;
+}
+
+h4 {
+	font-size: 1em;
+	margin: 1.33em 0;
+}
+
+h5 {
+	font-size: 0.83em;
+	margin: 1.67em 0;
+}
+
+h6 {
+	font-size: 0.75em;
+	margin: 2.33em 0;
+}
+
+abbr, acronym {
+	border: none;
+	font-variant: normal;
+}
+
+del {
+	text-decoration: line-through;
+}
+
+abbr[title] {
+	border-bottom: 1px dotted;
+	cursor: help;
+}
+
+b, strong {
+	font-weight: bold;
+}
+
+dfn {
+	font-style: italic;
+}
+
+hr {
+	display: none;
+}
+
+mark {
+	background: #ff0;
+	color: #000;
+	font-style: italic;
+	font-weight: bold;
+	display: block;
+	height: 1px;
+	border: none;
+	border-top: 1px solid #cccccc;
+	margin: 1em 0;
+}
+
+ins {
+	background-color: #ff9;
+	color: #000;
+	text-decoration: none;
+}
+
+code, kbd, pre, samp {
+	font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+	font-size: 1em;
+}
+
+code {
+	padding: 3px;
+	color: #518BAB;
+	border: 1px solid lightblue;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+pre {
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap !important;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+	margin: 0px;
+	padding: 5px;
+	background: #fff;
+	border: 1px solid #ddd;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: inset 0px 0px 7px rgba(0,0,0,0.2);
+	-moz-box-shadow: inset 0px 0px 7px rgba(0,0,0,0.2);
+	box-shadow: inset 0px 0px 7px rgba(0,0,0,0.2);
+}
+
+ol, ul, nav ul, dir, menu {
+	list-style: none;
+}
+
+q {
+	quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+p {
+	margin: 10px 0;
+}
+
+blockquote {
+	font-size: 1.5em;
+	line-height: 1.5em;
+	font-style: italic;
+	margin: 30px 30px 30px 0;
+	padding: 0 0 0 20px;
+	border-left: 1px solid #ccc;
+}
+
+blockquote span {
+	font-size: 0.7em;
+	display: block;
+}
+
+blockquote.small {
+	font-size: 1.2em;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: "";
+	content: none;
+}
+
+small {
+	font-size: 80%;
+}
+
+sub, sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	vertical-align: text-top;
+}
+
+sub {
+	vertical-align: text-bottom;
+}
+
+svg:not(:root) {
+	overflow: hidden;
+}
+
+fieldset {
+	border: 1px solid #c0c0c0;
+	margin: 0 2px;
+	padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+	border: none;
+	color: #000;
+}
+
+input, select {
+	vertical-align: middle;
+}
+
+input, textarea, select {
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	*font-size: 100%;
+}
+
+button, input, select, textarea {
+	font-family: inherit;
+	font-size: 100%;
+}
+
+button, input {
+	line-height: normal;
+}
+
+button, select {
+	text-transform: none;
+}
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+	-webkit-appearance: button;
+	cursor: pointer;
+}
+
+button[disabled], html input[disabled] {
+	cursor: default;
+}
+
+input[type="search"] {
+	-webkit-appearance: textfield;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+	border: none;
+}
+
+textarea {
+	overflow: auto;
+	vertical-align: top;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+caption, th {
+	text-align: left;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+	font-style: normal;
+	font-weight: normal;
+}
+
+img {
+	border: none;
+	display: inline-block;
+	vertical-align: middle;
+	-ms-interpolation-mode: bicubic;
+}

@@ -1,0 +1,9 @@
+<header role="banner">
+	<div id="top_panel" class="container">
+		<ul class="social_icons font mono-social-icons-font">
+			{% for social in site.author.socials %}
+				<li class="{{ social.name }}"><a href="{{ social.url }}" title="{{ site.author.name }} at {{ social.name }}" target="_blank">{{ social.icon }}</a></li>
+			{% endfor %}
+		</ul>
+	</div>
+</header>

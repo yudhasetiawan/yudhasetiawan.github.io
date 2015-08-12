@@ -1,0 +1,11 @@
+<footer class="fixed" role="contentinfo" itemscope itemtype="http://schema.org/Person">
+	<p>Copyright &#169; {{ site.time | date: '%Y' }} <a title="{{ site.author.name }}" href="{{ site.author.url }}" itemprop="name">{{ site.author.name }}</a> | <a href="mailto:{{ site.author.email }}" title="Contact {{ site.author.name }}" itemprop="email">{{ site.author.email }}</a></p>
+	<meta itemprop="image" content="/assets/img/Logo/standar.png">
+	<meta itemprop="url" content="{{ site.author.url }}">
+	<span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+		<meta itemprop="addressLocality" content="{{ site.author.address.locality }}">
+		<meta itemprop="addressCountry" content="{{ site.author.address.country }}">
+	</span>
+</footer>
+
+{% include ga.html %}

@@ -1,0 +1,151 @@
+/*
+ * Copyright (C) 2013, Yudha Setiawan.
+ *
+ *		This program is free software: you can redistribute it and/or modify
+ *		it under the terms of the GNU General Public License as published by
+ *		the Free Software Foundation, either version 3 of the License, or
+ *		(at your option) any later version.
+ *	
+ *		This program is distributed in the hope that it will be useful,
+ *		but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *		MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *		GNU General Public License for more details.
+ *	
+ *		You should have received a copy of the GNU General Public License
+ *		along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ */
+
+html {
+	background-color: rgba(0, 0, 0, 0.85);
+	background-image: url("../img/tile.png");
+}
+
+a, a span {
+	-webkit-transition: all 1s ease-out;
+	-moz-transition: all 1s ease-out;
+	-o-transition: all 1s ease-out;
+	-ms-transition: all 1s ease-out;
+}
+
+.container {
+	margin: 0 auto;
+	margin-bottom: 25px;
+	text-align: center;
+}
+
+header {
+	width: 100%;
+	background-color: #50b7dc;
+	-webkit-box-shadow: rgba(0,0,0,0.3) 0px 2px 2px -1px;
+	-moz-box-shadow: rgba(0,0,0,0.3) 0px 2px 2px -1px;
+	box-shadow: rgba(0,0,0,0.3) 0px 2px 2px -1px;
+}
+
+header .container {
+	text-align: left;
+}
+
+#logo, #content {
+	padding: 0 10px;
+	margin: 25px auto;
+	font-size: 45px;
+	color: white;
+}
+
+#logo {
+	font-size: 25px;
+	color: dimGray;
+	letter-spacing: 0.5px;
+}
+
+#logo a {
+	width: 100px;
+	height: 100px;
+	background-image: url("../img/Logo.svg");
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	margin: 0 auto;
+}
+
+#content.header-section {
+	font-size: 25px;
+	color: dimGray;
+	letter-spacing: 0.5px;
+}
+
+.no-svg #logo a {
+	background-image: url("../img/Logo.png");
+}
+
+.social_icons li {
+	display: inline-block;
+	font-size: 25px;
+	color: white;
+}
+
+.social_icons li a {
+	padding: 0 10px;
+	display: block;
+}
+
+#content p {
+	margin: 50px 0;
+	text-align: left;
+	line-height: 1.5;
+}
+
+#top_panel  .social_icons li.facebook a:hover {
+	background-color: #3b5998;
+}
+
+#top_panel  .social_icons li.twitter a:hover {
+	background-color: #33ccff;
+}
+
+#top_panel  .social_icons li.vimeo a:hover {
+	background-color: #329EEB;
+}
+
+#top_panel  .social_icons li.googleplus a:hover {
+	background-color: #d94a39;
+}
+
+#top_panel  .social_icons li.pinterest a:hover {
+	background-color: #cb2027;
+}
+
+#top_panel  .social_icons li.linkedin a:hover {
+	background-color: #4D8DAA;
+}
+
+#top_panel  .social_icons li.skype a:hover {
+	background-color: #62D5FF;
+}
+
+/*Footer Container*/
+footer {
+	bottom: 0;
+	width: 100%;
+	display: block;
+	border-bottom: 5px solid #50b7dc;
+}
+
+/*Footer content wrapper*/
+footer p {
+	text-align: center;
+	color: #ccc;
+	margin: 15px 0;
+	padding: 2.5px 15px;
+	font-size: 0.75em;
+}
+
+/*Footer Link*/
+footer a {
+	color: #ccc;
+}
+
+/*Footer Link*/
+footer a:hover {
+	color: #50b7dc;
+}
