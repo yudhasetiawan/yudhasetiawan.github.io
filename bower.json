@@ -1,0 +1,24 @@
+{
+  "name": "yudhasetiawan",
+  "version": "0.0.1",
+  "homepage": "http://yudhasetiawan.com",
+  "authors": [
+    "Yudha Setiawan <me@yudhasetiawan.com>"
+  ],
+  "description": "A Personal Site",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "pace": "~1.0.2",
+    "Processing.js": "~1.4.16"
+  }
+}

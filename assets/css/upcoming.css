@@ -28,6 +28,28 @@ a, a span {
 	-ms-transition: all 1s ease-out;
 }
 
+#pace-element {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	display: block;
+	background: white;
+	z-index: 999;
+}
+
+.pace .pace-progress:before {
+	background: none;
+	font: 0/0 a;
+	border: 0;
+	/*color: transparent;*/
+	/*background-color: transparent;*/
+	text-indent: 100%;
+	text-shadow: none;
+	white-space: nowrap;
+}
+
 .container {
 	margin: 0 auto;
 	margin-bottom: 25px;
@@ -66,6 +88,13 @@ header .container {
 	background-repeat: no-repeat;
 	background-size: 100px 100px;
 	margin: 0 auto;
+}
+
+#canvas-processing {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: -1;
 }
 
 #content.header-section {
