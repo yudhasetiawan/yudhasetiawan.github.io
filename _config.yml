@@ -21,7 +21,7 @@ author:
 emoji:
   src: "/assets/img/emoji"
 permalink: pretty
-highlighter: pygments
+highlighter: rouge
 sass:
   sass_dir: assets
   style: :compressed
