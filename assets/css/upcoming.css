@@ -5,12 +5,12 @@
  *		it under the terms of the GNU General Public License as published by
  *		the Free Software Foundation, either version 3 of the License, or
  *		(at your option) any later version.
- *	
+ *
  *		This program is distributed in the hope that it will be useful,
  *		but WITHOUT ANY WARRANTY; without even the implied warranty of
  *		MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  *		GNU General Public License for more details.
- *	
+ *
  *		You should have received a copy of the GNU General Public License
  *		along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
@@ -84,7 +84,7 @@ header .container {
 #logo a {
 	width: 100px;
 	height: 100px;
-	background-image: url("../img/Logo.svg");
+	background-image: url("../img/logo.svg");
 	background-repeat: no-repeat;
 	background-size: 100px 100px;
 	margin: 0 auto;
@@ -104,7 +104,7 @@ header .container {
 }
 
 .no-svg #logo a {
-	background-image: url("../img/Logo.png");
+	background-image: url("../img/logo.png");
 }
 
 .social_icons li {
@@ -150,6 +150,51 @@ header .container {
 	background-color: #62D5FF;
 }
 
+.typed-cursor {
+    margin-left: 5px;
+    font-family: "star_avenue";
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink{
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@-webkit-keyframes blink{
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@-moz-keyframes blink{
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
 /*Footer Container*/
 footer {
 	bottom: 0;
@@ -181,24 +226,36 @@ footer a:hover {
 	#logo, #content {
 		margin: 25px auto;
 	}
+
 	#logo p {
 		font-size: 18px;
 	}
+
 	#content p {
 		margin: 25px 0px;
-		font-size: 24px;
 	}
+
+    #content p,
+    #content .typed-cursor {
+        font-size: 24px;
+    }
 }
 
 @media (max-width:480px) {
 	#logo, #content {
 		margin: 15px auto;
 	}
+
 	#logo p {
 		font-size: 14px;
 	}
-	#content p {
-		margin: 15px 0px;
+
+    #content p {
+        margin: 15px 0px;
+    }
+
+    #content p,
+	#content .typed-cursor {
 		font-size: 18px;
 	}
 }

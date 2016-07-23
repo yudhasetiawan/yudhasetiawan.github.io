@@ -8,9 +8,21 @@
 	</span>
 </footer>
 
+<script language="javascript" src="/assets/components/jquery/dist/jquery.min.js"></script>
+<script language="javascript" src="/assets/components/typed.js/dist/typed.min.js"></script>
 <script language="javascript" src="/assets/components/Processing.js/processing.min.js"></script>
 <script type="application/javascript">
-	Processing.getInstanceById('processingcanvas');
+    (function($, processing) {
+        $('.quote-type').typed({
+            strings: {{ site.quotes | jsonify }},
+            contentType: 'text',
+            backDelay: 3000,
+            typeSpeed: 10,
+            loop: true
+        });
+
+        processing.getInstanceById('processingcanvas');
+    })(jQuery, window.Processing);
 </script>
 
 {% include ga.html %}
