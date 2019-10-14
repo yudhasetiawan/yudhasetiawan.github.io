@@ -21,7 +21,3 @@ assets/img/
 ```
 
 All other directories and files are MIT Licensed (where applicable).
-
-## Find Me
-
-:wave: :heart: [@yudhasetiawan17](http://twitter.com/yudhasetiawan17) :heart: :wave:
