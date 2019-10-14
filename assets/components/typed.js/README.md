@@ -1,262 +1,327 @@
-Typed.js
-========
+[![Build Status](https://travis-ci.org/mattboldt/typed.js.svg?branch=typed-2.0)](https://travis-ci.org/mattboldt/typed.js)
+[![Code Climate](https://codeclimate.com/github/mattboldt/typed.js/badges/gpa.svg)](https://codeclimate.com/github/mattboldt/typed.js)
+[![GitHub release](https://img.shields.io/github/release/mattboldt/typed.js.svg)]()
+[![npm](https://img.shields.io/npm/dt/typed.js.svg)](https://img.shields.io/npm/dt/typed.js.svg)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/mattboldt/typed.js/master/LICENSE.txt)
 
-[View the live demo](http://www.mattboldt.com/demos/typed-js/) | [Go to my site, mattboldt.com](http://www.mattboldt.com)
+<img src="https://raw.githubusercontent.com/mattboldt/typed.js/master/logo-cropped.png" width="450px" title="Typed.js" />
 
-Typed.js is a jQuery plugin that types. Enter in any string, and watch it type at the speed you've set, backspace what it's typed, and begin a new sentence for however many strings you've set.
+### [Live Demo](http://www.mattboldt.com/demos/typed-js/) | [View All Demos](http://mattboldt.github.io/typed.js/) | [View Full Docs](http://mattboldt.github.io/typed.js/docs) | [mattboldt.com](http://www.mattboldt.com)
+
+Typed.js is a library that types. Enter in any string, and watch it type at the speed you've set, backspace what it's typed, and begin a new sentence for however many strings you've set.
 
 ---
 
-Looking for some custom use cases for Typed.js? [Check out the wiki](https://github.com/mattboldt/typed.js/wiki)
+## Installation
 
----
+#### Choose One
 
-Installation
-------------
+```
+npm install typed.js
+yarn add typed.js
+bower install typed.js
+```
+
+#### CDN
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+```
+
+#### Setup
+
 This is really all you need to get going.
 
-~~~ javascript
-<script src="jquery.js"></script>
-<script src="typed.js"></script>
-<script>
-	$(function(){
-		$(".element").typed({
-			strings: ["First sentence.", "Second sentence."],
-			typeSpeed: 0
-		});
-	});
-</script>
-...
+```javascript
+// Can also be included with a regular script tag
+import Typed from 'typed.js';
 
-<span class="element"></span>
-~~~
+var options = {
+  strings: ['<i>First</i> sentence.', '&amp; a second sentence.'],
+  typeSpeed: 40
+};
 
-### Install with Bower
+var typed = new Typed('.element', options);
+```
 
-~~~
-bower install typed.js
-~~~
+## Wonderful sites that have used (or are using) Typed.js
 
-Want the animated blinking cursor? Add this CSS.
+https://github.com/features/package-registry
 
-~~~ scss
-.typed-cursor{
-	opacity: 1;
-	-webkit-animation: blink 0.7s infinite;
-	-moz-animation: blink 0.7s infinite;
-	animation: blink 0.7s infinite;
-}
-@keyframes blink{
-	0% { opacity:1; }
-	50% { opacity:0; }
-	100% { opacity:1; }
-}
-@-webkit-keyframes blink{
-	0% { opacity:1; }
-	50% { opacity:0; }
-	100% { opacity:1; }
-}
-@-moz-keyframes blink{
-	0% { opacity:1; }
-	50% { opacity:0; }
-	100% { opacity:1; }
-}
-~~~
-
-Wonderful sites using Typed.js
----
 https://slack.com/
 
 https://envato.com/
+
+https://gorails.com/
 
 https://productmap.co/
 
 https://www.typed.com/
 
+https://apeiron.io
+
 https://git.market/
-
-http://allison.house/404
-
-http://www.maxcdn.com/
 
 https://commando.io/
 
 http://testdouble.com/agency.html
 
-http://www.stephanemartinw.com/
+https://www.capitalfactory.com/
 
-http://www.trelab.fi/en/
+http://www.maxcdn.com/
 
-http://jessejohnson.github.io/
+https://www.powerauth.com/
 
-http://patrickelhage.com/
-
-http://tairemadailey.com/
-
-
-### HTML tags
-
-By default the content type is set to `html`, so you're good to go. Want to type out the html regularly? Set it to `text`.
-
-~~~ javascript
-$(".element").typed({
-	strings: ["Typed.js is a <strong>jQuery</strong> plugin."],
-	contentType: 'html' // or 'text'
-});
-~~~
+---
 
 ### Strings from static HTML (SEO Friendly)
+
 Rather than using the `strings` array to insert strings, you can place an HTML `div` on the page and read from it.
 This allows bots and search engines, as well as users with JavaScript disabled, to see your text on the page.
 
-~~~ javascript
+```javascript
 <script>
-	$(function(){
-		$("#typed").typed({
-			stringsElement: $('#typed-strings')
-		});
-	});
+  var typed = new Typed('#typed', {
+    stringsElement: '#typed-strings'
+  });
 </script>
-~~~
-You must wrap each string in the `typed-strings` div with a `<p>`
-~~~ html
+```
+
+```html
 <div id="typed-strings">
-    <p>Typed.js is a <strong>jQuery</strong> plugin.</p>
-    <p>It <em>types</em> out sentences.</p>
+  <p>Typed.js is a <strong>JavaScript</strong> library.</p>
+  <p>It <em>types</em> out sentences.</p>
 </div>
 <span id="typed"></span>
-~~~
-
-### Line Breaks
-
-#### `contentType: 'html'`
-
-~~~ javascript
-$(".typed").typed({ strings: ["Sentence with <br>line break."] });
-~~~
-
-#### `contentType: 'text'`
-
-Use `white-space: pre` in your typed text element, and then `\n` when typing out the strings. Example:
-
-~~~ html
-
-<span id="typed" style="white-space:pre"></span>
-
-...
-
-$(".typed").typed({ strings: ["Sentence with a\nline break."] });
-
-~~~
+```
 
 ### Type Pausing
 
 You can pause in the middle of a string for a given amount of time by including an escape character.
 
-~~~ javascript
-<script>
-	$(function(){
-		$(".element").typed({
-			// Waits 1000ms after typing "First"
-			strings: ["First ^1000 sentence.", "Second sentence."]
-		});
-	});
-</script>
-~~~
+```javascript
+var typed = new Typed('.element', {
+  // Waits 1000ms after typing "First"
+  strings: ['First ^1000 sentence.', 'Second sentence.']
+});
+```
 
+### Smart Backspacing
 
-Customization
-----
+In the following example, this would only backspace the words after "This is a"
 
-~~~ javascript
-<script>
-	$(function(){
-		$(".element").typed({
-			strings: ["First sentence.", "Second sentence."],
-			// Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
-			stringsElement: null,
-			// typing speed
-			typeSpeed: 0,
-			// time before typing starts
-			startDelay: 0,
-			// backspacing speed
-			backSpeed: 0,
-			// shuffle the strings
- +        		shuffle: false,
-			// time before backspacing
-			backDelay: 500,
-			// loop
-			loop: false,
-			// false = infinite
-			loopCount: false,
-			// show cursor
-			showCursor: true,
-			// character for cursor
-			cursorChar: "|",
-			// attribute to type (null == text)
-			attr: null,
-			// either html or text
-			contentType: 'html',
-			// call when done callback function
-			callback: function() {},
-			// starting callback function before each string
-			preStringTyped: function() {},
-			//callback for every typed string
-			onStringTyped: function() {},
-			// callback for reset
-			resetCallback: function() {}
-		});
-	});
-</script>
-~~~
+```javascript
+var typed = new Typed('.element', {
+  strings: ['This is a JavaScript library', 'This is an ES6 module'],
+  smartBackspace: true // Default value
+});
+```
 
+### Bulk Typing
 
-### Get Super Custom
+The following example would emulate how a terminal acts when typing a command and seeing its result.
 
-Want to get really custom? On my site and in the Typed.js demo I have the code type out two words, and then backspace only those two, then continue where it left off. This is done in an `if` statement in the `backspace()` function. Here's what it looks like.
+```javascript
+var typed = new Typed('.element', {
+  strings: ['git push --force ^1000\n `pushed to origin with option force`']
+});
+```
 
-~~~ javascript
-...
-, backspace: function(curString, curStrPos){
-	...
+### CSS
 
-	setTimeout(function() {
+CSS animations are built upon initialzation in JavaScript. But, you can customize them at your will! These classes are:
 
-			// check string array position
-			// on the first string, only delete one word
-			// the stopNum actually represents the amount of chars to
-			// keep in the current string. In my case it's 3.
-			if (self.arrayPos == 1){
-				self.stopNum = 3;
-			}
-			//every other time, delete the whole typed string
-			else{
-				self.stopNum = 0;
-			}
-...
-~~~
+```css
+/* Cursor */
+.typed-cursor {
+}
 
-This checks if the `arrayPos` is `1`, which would be the second string you entered. If so, it sets `stopNum` to `3` instead of `0`, which tells it to stop when there are 3 characters left. For now you'll have to create custom `if` statements for each specific case you want. I may automate this somehow in the future.
+/* If fade out option is set */
+.typed-fade-out {
+}
+```
 
+### Use with ReactJS
 
-## Development
+Check out this example React app using Typed.js in a component: https://jsfiddle.net/mattboldt/ovat9jmp/
 
-`npm install`
+### Use with Vue.js
 
-Then, once you've made your edits:
+Check out the Vue.js component: https://github.com/Orlandster/vue-typed-js
 
-`gulp`
+### Use it as WebComponent
 
-This will create a minified version in `/dist`
+Check out the WebComponent: https://github.com/Orlandster/wc-typed-js
 
+## Customization
 
-end
----
+```javascript
+var typed = new Typed('.element', {
+  /**
+   * @property {array} strings strings to be typed
+   * @property {string} stringsElement ID of element containing string children
+   */
+  strings: [
+    'These are the default values...',
+    'You know what you should do?',
+    'Use your own!',
+    'Have a great day!'
+  ],
+  stringsElement: null,
+
+  /**
+   * @property {number} typeSpeed type speed in milliseconds
+   */
+  typeSpeed: 0,
+
+  /**
+   * @property {number} startDelay time before typing starts in milliseconds
+   */
+  startDelay: 0,
+
+  /**
+   * @property {number} backSpeed backspacing speed in milliseconds
+   */
+  backSpeed: 0,
+
+  /**
+   * @property {boolean} smartBackspace only backspace what doesn't match the previous string
+   */
+  smartBackspace: true,
+
+  /**
+   * @property {boolean} shuffle shuffle the strings
+   */
+  shuffle: false,
+
+  /**
+   * @property {number} backDelay time before backspacing in milliseconds
+   */
+  backDelay: 700,
+
+  /**
+   * @property {boolean} fadeOut Fade out instead of backspace
+   * @property {string} fadeOutClass css class for fade animation
+   * @property {boolean} fadeOutDelay Fade out delay in milliseconds
+   */
+  fadeOut: false,
+  fadeOutClass: 'typed-fade-out',
+  fadeOutDelay: 500,
+
+  /**
+   * @property {boolean} loop loop strings
+   * @property {number} loopCount amount of loops
+   */
+  loop: false,
+  loopCount: Infinity,
+
+  /**
+   * @property {boolean} showCursor show cursor
+   * @property {string} cursorChar character for cursor
+   * @property {boolean} autoInsertCss insert CSS for cursor and fadeOut into HTML <head>
+   */
+  showCursor: true,
+  cursorChar: '|',
+  autoInsertCss: true,
+
+  /**
+   * @property {string} attr attribute for typing
+   * Ex: input placeholder, value, or just HTML text
+   */
+  attr: null,
+
+  /**
+   * @property {boolean} bindInputFocusEvents bind to focus and blur if el is text input
+   */
+  bindInputFocusEvents: false,
+
+  /**
+   * @property {string} contentType 'html' or 'null' for plaintext
+   */
+  contentType: 'html',
+
+  /**
+   * Before it begins typing
+   * @param {Typed} self
+   */
+  onBegin: (self) => {},
+
+  /**
+   * All typing is complete
+   * @param {Typed} self
+   */
+  onComplete: (self) => {},
+
+  /**
+   * Before each string is typed
+   * @param {number} arrayPos
+   * @param {Typed} self
+   */
+  preStringTyped: (arrayPos, self) => {},
+
+  /**
+   * After each string is typed
+   * @param {number} arrayPos
+   * @param {Typed} self
+   */
+  onStringTyped: (arrayPos, self) => {},
+
+  /**
+   * During looping, after last string is typed
+   * @param {Typed} self
+   */
+  onLastStringBackspaced: (self) => {},
+
+  /**
+   * Typing has been stopped
+   * @param {number} arrayPos
+   * @param {Typed} self
+   */
+  onTypingPaused: (arrayPos, self) => {},
+
+  /**
+   * Typing has been started after being stopped
+   * @param {number} arrayPos
+   * @param {Typed} self
+   */
+  onTypingResumed: (arrayPos, self) => {},
+
+  /**
+   * After reset
+   * @param {Typed} self
+   */
+  onReset: (self) => {},
+
+  /**
+   * After stop
+   * @param {number} arrayPos
+   * @param {Typed} self
+   */
+  onStop: (arrayPos, self) => {},
+
+  /**
+   * After start
+   * @param {number} arrayPos
+   * @param {Typed} self
+   */
+  onStart: (arrayPos, self) => {},
+
+  /**
+   * After destroy
+   * @param {Typed} self
+   */
+  onDestroy: (self) => {}
+});
+```
+
+## Contributing
+
+### [View Contribution Guidelines](./.github/CONTRIBUTING.md)
+
+## end
 
 Thanks for checking this out. If you have any questions, I'll be on [Twitter](http://www.twitter.com/atmattb).
 
 If you're using this, let me know! I'd love to see it.
 
 It would also be great if you mentioned me or my website somewhere. [www.mattboldt.com](http://www.mattboldt.com)
-
-

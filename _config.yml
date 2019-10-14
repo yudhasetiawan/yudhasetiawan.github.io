@@ -1,35 +1,93 @@
-title: "Yudha Setiawan"
-description: "Always try to expecting different result"
-keywords: "html5, jquery, tutorials, image gallery, plugins, web design, tutorial, php, css, css3, javascript, php login system, programming, mysql, web development, resources, buttons, free, downloads, iphone, freebies, news, html, freelance"
-url: "http://yudhasetiawan.com"
-timezone: "Asia/Jakarta"
-quotes:
-  - "I promise!"
-  - "Always try to expecting different result."
-  - "Keep your balance, You must keep moving."
-  - "Now or never."
+title: Yudha Setiawan
+description: Always try to expecting different result
+keywords: html5, jquery, tutorials, image gallery, plugins, web design, tutorial, php, css, css3, javascript, php login system, programming, mysql, web development, resources, buttons, free, downloads, iphone, freebies, news, html, freelance
+url: http://yudhasetiawan.com
+timezone: Asia/Jakarta
+typed:
+  contentType: html
+  backDelay: 10000
+  typeSpeed: 10
+  startDelay: 500
+  fadeOut: true
+  loop: true
+  loopCount: Infinity
+  shuffle: true
+  strings:
+    - Any fool can write code that a computer can understand. Good programmers write code that humans can understand.^1000<br/><strong> – Martin Fowler</strong>
+    - First, solve the problem. Then, write the code.^1000<br/><strong> – John Johnson</strong>
+    - Experience is the name everyone gives to their mistakes.^1000<br/><strong> – Oscar Wilde</strong>
+    - In order to be irreplaceable, one must always be different.^1000<br/><strong> – Coco Chanel</strong>
+    - Java is to JavaScript what car is to Carpet.^1000<br/><strong> – Chris Heilmann</strong>
+    - Knowledge is power.^1000<br/><strong> – Francis Bacon</strong>
+    - Sometimes it pays to stay in bed on Monday, rather than spending the rest of the week debugging Monday’s code.^1000<br/><strong> – Dan Salomon</strong>
+    - Perfection is achieved not when there is nothing more to add, but rather when there is nothing more to take away.^1000<br/><strong> – Antoine de Saint-Exupery</strong>
+    - Code is like humor. When you have to explain it, it’s bad.^1000<br/><strong> – Cory House</strong>
+    - Fix the cause, not the symptom.^1000<br/><strong> – Steve Maguire</strong>
+    - Optimism is an occupational hazard of programming - feedback is the treatment.^1000<br/><strong> – Kent Beck</strong>
+    - When to use iterative development? You should use iterative development only on projects that you want to succeed.^1000<br/><strong> – Martin Fowler</strong>
+    - Simplicity is the soul of efficiency.^1000<br/><strong> – Austin Freeman</strong>
+    - Before software can be reusable it first has to be usable.^1000<br/><strong> – Ralph Johnson</strong>
+    - Make it work, make it right, make it fast.^1000<br/><strong> – Kent Beck</strong>
+    - Dont't worry if it doesn't work right.If everything did, you'd be out of a job.
+    - Don't comment bad code; rewrite it.^1000<br/><strong> – Brian Kernighan</strong>
+    - A programming language is for thinking about programs, not for expressing programs you've already thought of. It should be a pencil, not a pen.^1000<br/><strong> – Paul Graham</strong>
+    - It´s better to wait for a productive programmer to become available than it is to wait for the first available programmer to become productive.^1000<br/><strong> – Steve McConnell</strong>
+    - One of my most productive days was throwing away 1000 lines of code.^1000<br/><strong> – Ken Thompson</strong>
+    - Without requirements or design, programming is the art of adding bugs to an empty text file.
+    - One main'scrappy software is another man's full time job.
+    - Walking on water and developing software from a specification are easy if both are frozen.
+    - Debugging is twice as hard as writing the code in the first place.Therfore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it.^1000<br/><strong> – Rajanand</strong>
+    - System programmers are the high priests of a low cult.^1000<br/><strong> – Robert S. Barton</strong>
+    - I don't care if it works on your machine! We are not shipping your machine!^1000<br/><strong> – Vidiu Platon</strong>
+    - Software undergoes beta testing shortly before iy' released.Beta is latin for still doesn't work
+    - Measuring programming progree by lines of code is like measuring aircraft building progree by weight.^1000<br/><strong> – Bill Gates</strong>
+    - If debudding is the process of removing software bugs, then programming must be the process of putting them in.^1000<br/><strong> – Edsger W. Dijkstra</strong>
+    - The computer was born to solve problems that did not exist before.^1000<br/><strong> – Bill Gates</strong>
+    - Real programmers don't comment their code. If it was hard to write, it should be hard to understand.
+    - Always code as if the guy who ends up maintaning your code will be a violent psychopath who knows where you live.^1000<br/><strong> – Rick Osborne</strong>
+    - People don't care about what you say, they care about what you build.^1000<br/><strong> – Mark Zuckerberg</strong>
+    - We have to stop optimizing for programmers and start optimizing for users.^1000<br/><strong> – Jeff Atwood</strong>
+    - If the code and the comments do not match, possibly both are incorrect.^1000<br/><strong> – Norm Schryer</strong>
+    - Bad programmers worry about the code. Good programmers worry about data structures and their relationships.^1000<br/><strong> – Linus Torvalds</strong>
+    - If you optimize everything, you will always be unhappy.^1000<br/><strong> – Donald Knuth</strong>
+    - Your mind is programmable; if you're not programming your mind, else will program it for you.^1000<br/><strong> – Jeremy Hammond</strong>
+    - The trouble with programmers is that you can never tell what a programmer is doing until it's too late.^1000<br/><strong> – Seymour Cray</strong>
+    - Debugging becomes significantly easier if you first admit that you are the problem.^1000<br/><strong> – William Laeder</strong>
+    - Talk is cheap.Show me the code.^1000<br/><strong> – Linus Torvalds</strong>
+    - Everybody in this country should learn to program a computer because it teaches you how to think.^1000<br/><strong> – Steve Jobs</strong>
+    - Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program.^1000<br/><strong> – Rajanand</strong>
+    - The function of a good software is to make the complex appear to be simple.^1000<br/><strong> – Grady Booch</strong>
+    - Your most unhappy customers are your greatest source of learning.^1000<br/><strong> – Bill Gates</strong>
+    - Small minds are concerned with the extraordinary, great minds with the ordinary.^1000<br/><strong> – Blaise Pascal</strong>
+    - Everyday life is like programming, I guess.If you love something you can put beauty on it.^1000<br/><strong> – Donald Knuth</strong>
+    - You are not responsible for the programming you picked up in childhood.However, as an adult, you are the one hundred percent responsible for fixing it.
+    - Developer is an organism that turns coffee into code.
+    - The purpose of software engineering is to control complexity, not to create it.
+    - As a programmer, it is your job to put yourself out of business. What you do today can be automated tomorrow.^1000<br/><strong> – Doug McIlroy</strong>
+    - A good programmer is someone who always looks both ways before crossing a one-way street.^1000<br/><strong> – Doug Linder</strong>
+    - Testing can only prove the presence of bugs, not their absence.^1000<br/><strong> – Edsger W. Dijkstra</strong>
 google:
-  uid: "37180411"
-  analytics: "UA-37180411-3"
+  uid: 37180411
+  analytics: UA-37180411-3
 author:
-  name: "Yudha Setiawan"
-  url: "http://yudhasetiawan.com"
-  email: "me@yudhasetiawan.com"
+  name: Yudha Setiawan
+  url: http://yudhasetiawan.com
+  email: me@yudhasetiawan.com
   address:
     locality: Yogyakarta
     country: Indonesia
   socials:
-    - name: "linkedin"
-      title: "Linkedin"
-      icon: "circlelinkedin"
-      url: "http://id.linkedin.com/in/yudhasetiawan"
+    - name: linkedin
+      title: Linkedin
+      icon: circlelinkedin
+      url: http://id.linkedin.com/in/yudhasetiawan
 emoji:
-  src: "/assets/img/emoji"
+  src: /assets/img/emoji
 permalink: pretty
 highlighter: rouge
 sass:
   sass_dir: assets
   style: :compressed
-gems:
+plugins:
   - jemoji
   - jekyll-mentions

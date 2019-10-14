@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,500);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,500);
 
 *{
 	padding:0;
@@ -15,18 +15,36 @@ a{
 	text-decoration: none;
 	color:#666;
 }
-	a:hover{
-		color:#999;
-	}
+a:hover{
+	color:#999;
+}
+
+button {
+	padding: 10px;
+	border-radius: 3px;
+	background: #E0E0E0;
+	border: #CCC 1px solid;
+}
+
 p{
 	line-height: 2em;
 	margin:0 0 20px;
 	text-align: center;
 }
 
+hr{
+	border: 0;
+	border-bottom: #CCC 2px solid;
+	margin: 30px auto;
+}
+
+.title{
+	font-size: 4em;
+}
+
 .wrap{
 	max-width: 600px;
-	margin:150px auto;
+	margin:50px auto;
 }
 
 .type-wrap{
@@ -40,5 +58,4 @@ p{
 .links{
 	margin:20px 0;
 	font-size: 0.75em;
-	text-align: center;
 }

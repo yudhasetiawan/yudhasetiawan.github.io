@@ -17,7 +17,7 @@
  */
 
 html {
-	background-color: rgba(0, 0, 0, 0.85);
+	background-color: rgba(0, 0, 0, 0.95);
 	background-image: url("../img/tile.png");
 }
 
@@ -118,8 +118,25 @@ header .container {
 	display: block;
 }
 
+#content {
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+}
+
 #content p {
-	text-align: left;
+	font-size: 32px;
+	color: #50b7dc;
+}
+
+#content .typed {
+	color: dimGray;
+}
+
+#content strong {
+	font-size: 38px;
+	font-style: italic;
+	color: dimGray;
 }
 
 #top_panel  .social_icons li.facebook a:hover {
@@ -231,6 +248,10 @@ footer a:hover {
 		font-size: 18px;
 	}
 
+	#content {
+		max-width: 90%;
+	}
+
 	#content p {
 		margin: 25px 0px;
 	}
@@ -249,6 +270,10 @@ footer a:hover {
 	#logo p {
 		font-size: 14px;
 	}
+
+    #content {
+		max-width: 100%;
+    }
 
     #content p {
         margin: 15px 0px;

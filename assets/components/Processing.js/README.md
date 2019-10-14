@@ -8,6 +8,12 @@ The current version is 1.4.13 (released March 21, 2015)
 
 **note:** this is not the repository for Processing, the language and IDE. Processing itself is hosted over at https://github.com/processing/processing. This is also not where to file bugs or ask questions about the "JS mode" that can be used with Processing, that project is hosted over at https://github.com/fjenett/javascript-mode-processing
 
+# This project is currently in need of developers
+
+There is currently no one working on, or maintaining, this codebase on a regular basis, so if you think you'd like to contribute to Processing.js, to bring it back in line with Processing's current API, and take advantage of the various APIs that have become available in browsers since Processing.js slowed down, we'd love to hear from you!
+
+File an issue to say that you'd like to help out, and we can find some good places for you to get started.
+
 ## Getting Processing.js
 
 ### Bower install
@@ -56,3 +62,7 @@ With the test server is running, the following urls are good to know:
 * [http://localhost:3000/ref](http://localhost:3000/ref) - reference testing page
 * [http://localhost:3000/perf](http://localhost:3000/perf) - performance testing page
 * [http://localhost:3000/processing-helper.html](http://localhost:3000/processing-helper.html) - utility page for converting/running Processing code
+
+### Contributing to Processing.js
+
+Please read ["how to contribute to Processing.js"](CONTRIBUTING.md) for how you can contribute, and what code of conduct is expected to be followed.
